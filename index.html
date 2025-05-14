@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container c_top d-flex flex-column justify-content-between">
+        <h2 class="align-self-center header_text">Todo App | Mini-Project</h2>
+        <div class="Inputs d-flex justify-content-between align-items-center gap-2">
+            <input type="text" placeholder="Enter Your Task !" class="tasktestInput form-control">
+            <input type="date" placeholder="mm/dd/yyyy" class="taskdateInput form-control">
+            <p class="addButton btn btn-warning mb-0">Add</p>
+        </div>
+        <div class="featureButton d-flex justify-content-between ">
+            <div class="featureButton_left d-flex justify-content-between gap-3">
+                <p class="btn-warning btn mb-0 categoryBtn" data-category="All">All</p>
+                <p class="btn-warning btn mb-0 categoryBtn" data-category="Pending">Pending</p>
+                <p class="btn-warning btn mb-0 categoryBtn" data-category="Complated">Complated</p>
+            </div>
+            <div class="featureButton_right">
+                <p class="btn-danger btn mb-0 deleteBtn">Delete All</p>
+            </div>
+        </div>
+    </div>
+    <div class="alert_container m-auto">
+        <div class="alert d-none alert-success" role="alert">
+            This is a success alert—check it out!
+          </div>
+    </div>
+    <div class="container c_bottum d-flex flex-column">
+        <div class="titleis d-flex">
+            <ul class="d-flex">
+                <li>Task</li>
+                <li>Date</li>
+                <li>Status</li>
+                <li>Actions</li>
+            </ul>
+        </div>
+        <div class="tasks d-flex ">
+            <ul class="d-flex justify-content-between">
+                <li class="tasksContainer d-flex flex-column gap-1">
+                    <ul class="d-none notTaskAlert">
+                        <li>Not Found Task</li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
